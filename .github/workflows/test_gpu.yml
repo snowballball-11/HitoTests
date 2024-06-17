@@ -1,0 +1,13 @@
+name: Test GPU
+
+on: [push]
+
+jobs:
+  test-gpu:
+    runs-on: self-hosted
+    container: fangst/py39_torch2.0:latest
+    steps:
+    - name: Check for GPU
+      id: check-gpu
+      run: |
+        nvidia-smi
