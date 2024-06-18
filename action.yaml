@@ -16,6 +16,6 @@ outputs:
 
 runs:
   using: docker
-  image: fangst/py39_torch2.0:latest
+  image: Dockerfile
   env:
     INPUT_WHO_TO_GREET: ${{ inputs.who-to-greet }}
