@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   test-gpu:
-    runs-on: a800
+    runs-on: self-hosted
     container: fangst/py39_torch2.0:latest
     steps:
     - name: Check for GPU
